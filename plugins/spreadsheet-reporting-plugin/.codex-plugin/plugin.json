@@ -1,0 +1,30 @@
+{
+  "name": "spreadsheet-reporting-plugin",
+  "version": "0.1.0",
+  "description": "Turn spreadsheet inputs into repeatable reports, checks, and executive summaries.",
+  "author": {
+    "name": "Telvine",
+    "url": "https://telvine.com"
+  },
+  "homepage": "https://telvine.com/learn/agent-plugin-templates",
+  "repository": "https://github.com/telvine/agent-plugin-templates/tree/main/plugins/spreadsheet-reporting-plugin",
+  "license": "MIT",
+  "keywords": ["spreadsheet", "xlsx", "csv", "reporting", "agent-plugin", "telvine"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Spreadsheet Reporting Plugin",
+    "shortDescription": "Build reports from CSV and XLSX inputs.",
+    "longDescription": "A spreadsheet reporting starter for recurring analysis, variance checks, charts, and management-ready summaries.",
+    "developerName": "Telvine",
+    "category": "Analytics",
+    "capabilities": ["Read", "Analyze", "Write"],
+    "websiteURL": "https://telvine.com/learn/agent-plugin-templates",
+    "brandColor": "#22C55E",
+    "defaultPrompt": [
+      "Build this week's spreadsheet report.",
+      "Find anomalies in this workbook.",
+      "Create a variance summary."
+    ]
+  }
+}
+

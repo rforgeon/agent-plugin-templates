@@ -1,0 +1,30 @@
+{
+  "name": "pdf-review-plugin",
+  "version": "0.1.0",
+  "description": "Review PDFs for obligations, inconsistencies, approvals, and extraction-ready summaries.",
+  "author": {
+    "name": "Telvine",
+    "url": "https://telvine.com"
+  },
+  "homepage": "https://telvine.com/learn/agent-plugin-templates",
+  "repository": "https://github.com/telvine/agent-plugin-templates/tree/main/plugins/pdf-review-plugin",
+  "license": "MIT",
+  "keywords": ["pdf", "document-review", "agent-plugin", "telvine"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "PDF Review Plugin",
+    "shortDescription": "Extract review notes from PDFs.",
+    "longDescription": "A PDF review starter for contracts, policies, statements, and approval packs that need structured findings.",
+    "developerName": "Telvine",
+    "category": "Productivity",
+    "capabilities": ["Read", "Analyze"],
+    "websiteURL": "https://telvine.com/learn/agent-plugin-templates",
+    "brandColor": "#EF4444",
+    "defaultPrompt": [
+      "Review this PDF for obligations.",
+      "Extract issues and approval notes.",
+      "Summarize this document with page refs."
+    ]
+  }
+}
+

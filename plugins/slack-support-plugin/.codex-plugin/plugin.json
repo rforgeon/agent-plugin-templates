@@ -1,0 +1,30 @@
+{
+  "name": "slack-support-plugin",
+  "version": "0.1.0",
+  "description": "Turn Slack support threads into prioritized support queues with owner, status, and next action.",
+  "author": {
+    "name": "Telvine",
+    "url": "https://telvine.com"
+  },
+  "homepage": "https://telvine.com/learn/agent-plugin-templates",
+  "repository": "https://github.com/telvine/agent-plugin-templates/tree/main/plugins/slack-support-plugin",
+  "license": "MIT",
+  "keywords": ["slack", "support", "triage", "agent-plugin", "telvine"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Slack Support Plugin",
+    "shortDescription": "Prioritize Slack support threads.",
+    "longDescription": "A Slack support starter for classifying customer issues, identifying owners, and producing escalation-ready queues.",
+    "developerName": "Telvine",
+    "category": "Support",
+    "capabilities": ["Read", "Analyze", "Draft"],
+    "websiteURL": "https://telvine.com/learn/agent-plugin-templates",
+    "brandColor": "#14B8A6",
+    "defaultPrompt": [
+      "Triage support threads from today.",
+      "Find unresolved Slack customer issues.",
+      "Draft escalation notes for priority threads."
+    ]
+  }
+}
+

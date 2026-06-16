@@ -1,0 +1,30 @@
+{
+  "name": "browser-automation-plugin",
+  "version": "0.1.0",
+  "description": "Run repeatable browser checks and web workflows with safe component telemetry.",
+  "author": {
+    "name": "Telvine",
+    "url": "https://telvine.com"
+  },
+  "homepage": "https://telvine.com/learn/agent-plugin-templates",
+  "repository": "https://github.com/telvine/agent-plugin-templates/tree/main/plugins/browser-automation-plugin",
+  "license": "MIT",
+  "keywords": ["browser", "automation", "qa", "agent-plugin", "telvine"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Browser Automation Plugin",
+    "shortDescription": "Automate repeatable browser workflows.",
+    "longDescription": "A browser automation starter for login checks, form flows, QA smoke tests, and repeatable web operations.",
+    "developerName": "Telvine",
+    "category": "Developer Tools",
+    "capabilities": ["Interactive", "Read", "Write"],
+    "websiteURL": "https://telvine.com/learn/agent-plugin-templates",
+    "brandColor": "#F59E0B",
+    "defaultPrompt": [
+      "Run the checkout smoke test.",
+      "Check the dashboard login flow.",
+      "Verify this form submission path."
+    ]
+  }
+}
+

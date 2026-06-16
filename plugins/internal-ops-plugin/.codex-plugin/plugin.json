@@ -1,0 +1,30 @@
+{
+  "name": "internal-ops-plugin",
+  "version": "0.1.0",
+  "description": "Run internal operations exception reviews, handoffs, and daily operating summaries.",
+  "author": {
+    "name": "Telvine",
+    "url": "https://telvine.com"
+  },
+  "homepage": "https://telvine.com/learn/agent-plugin-templates",
+  "repository": "https://github.com/telvine/agent-plugin-templates/tree/main/plugins/internal-ops-plugin",
+  "license": "MIT",
+  "keywords": ["internal-ops", "operations", "handoff", "agent-plugin", "telvine"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Internal Ops Plugin",
+    "shortDescription": "Review exceptions and prepare handoffs.",
+    "longDescription": "An internal operations starter for daily exception review, handoff preparation, and operating cadence summaries.",
+    "developerName": "Telvine",
+    "category": "Operations",
+    "capabilities": ["Read", "Analyze", "Draft"],
+    "websiteURL": "https://telvine.com/learn/agent-plugin-templates",
+    "brandColor": "#6366F1",
+    "defaultPrompt": [
+      "Prepare today's ops handoff.",
+      "Find open internal exceptions.",
+      "Summarize blocked operational items."
+    ]
+  }
+}
+

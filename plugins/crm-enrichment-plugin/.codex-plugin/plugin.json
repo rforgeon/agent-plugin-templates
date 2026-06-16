@@ -1,0 +1,30 @@
+{
+  "name": "crm-enrichment-plugin",
+  "version": "0.1.0",
+  "description": "Enrich CRM accounts and contacts with safe research notes, missing fields, and next actions.",
+  "author": {
+    "name": "Telvine",
+    "url": "https://telvine.com"
+  },
+  "homepage": "https://telvine.com/learn/agent-plugin-templates",
+  "repository": "https://github.com/telvine/agent-plugin-templates/tree/main/plugins/crm-enrichment-plugin",
+  "license": "MIT",
+  "keywords": ["crm", "enrichment", "sales", "agent-plugin", "telvine"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "CRM Enrichment Plugin",
+    "shortDescription": "Enrich account and contact records.",
+    "longDescription": "A CRM enrichment starter for identifying missing fields, validating account context, and drafting update-ready notes.",
+    "developerName": "Telvine",
+    "category": "Sales",
+    "capabilities": ["Read", "Analyze", "Draft"],
+    "websiteURL": "https://telvine.com/learn/agent-plugin-templates",
+    "brandColor": "#0EA5E9",
+    "defaultPrompt": [
+      "Enrich these CRM accounts.",
+      "Find missing account fields.",
+      "Prepare CRM update notes."
+    ]
+  }
+}
+

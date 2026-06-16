@@ -1,0 +1,30 @@
+{
+  "name": "code-review-plugin",
+  "version": "0.1.0",
+  "description": "Run structured code review for bugs, regressions, tests, and release risk.",
+  "author": {
+    "name": "Telvine",
+    "url": "https://telvine.com"
+  },
+  "homepage": "https://telvine.com/learn/agent-plugin-templates",
+  "repository": "https://github.com/telvine/agent-plugin-templates/tree/main/plugins/code-review-plugin",
+  "license": "MIT",
+  "keywords": ["code-review", "pull-request", "developer-tools", "agent-plugin", "telvine"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Code Review Plugin",
+    "shortDescription": "Review pull requests for release risk.",
+    "longDescription": "A code review starter for finding behavior regressions, missing tests, and risky implementation choices before merge.",
+    "developerName": "Telvine",
+    "category": "Developer Tools",
+    "capabilities": ["Read", "Analyze", "Draft"],
+    "websiteURL": "https://telvine.com/learn/agent-plugin-templates",
+    "brandColor": "#8B5CF6",
+    "defaultPrompt": [
+      "Review this pull request.",
+      "Find bugs and missing tests.",
+      "Summarize release risk."
+    ]
+  }
+}
+

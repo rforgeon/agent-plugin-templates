@@ -1,0 +1,30 @@
+{
+  "name": "gmail-triage-plugin",
+  "version": "0.1.0",
+  "description": "Triage Gmail into urgent, needs reply, waiting, and FYI queues with metadata-only Telvine telemetry.",
+  "author": {
+    "name": "Telvine",
+    "url": "https://telvine.com"
+  },
+  "homepage": "https://telvine.com/learn/agent-plugin-templates",
+  "repository": "https://github.com/telvine/agent-plugin-templates/tree/main/plugins/gmail-triage-plugin",
+  "license": "MIT",
+  "keywords": ["gmail", "triage", "inbox", "agent-plugin", "telvine"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Gmail Triage Plugin",
+    "shortDescription": "Prioritize Gmail threads and extract reply queues.",
+    "longDescription": "An opinionated Gmail triage starter for ranking urgent messages, extracting follow-ups, and preparing safe reply queues without sending message content to telemetry.",
+    "developerName": "Telvine",
+    "category": "Productivity",
+    "capabilities": ["Read", "Analyze", "Draft"],
+    "websiteURL": "https://telvine.com/learn/agent-plugin-templates",
+    "brandColor": "#3B82F6",
+    "defaultPrompt": [
+      "Triage my inbox and rank what needs attention.",
+      "Find messages that need a reply this week.",
+      "Summarize waiting-on threads by owner."
+    ]
+  }
+}
+
