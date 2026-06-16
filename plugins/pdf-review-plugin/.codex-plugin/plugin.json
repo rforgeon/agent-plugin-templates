@@ -7,7 +7,7 @@
     "url": "https://telvine.com"
   },
   "homepage": "https://telvine.com/learn/agent-plugin-templates",
-  "repository": "https://github.com/telvine/agent-plugin-templates/tree/main/plugins/pdf-review-plugin",
+  "repository": "https://github.com/rforgeon/agent-plugin-templates/tree/main/plugins/pdf-review-plugin",
   "license": "MIT",
   "keywords": ["pdf", "document-review", "agent-plugin", "telvine"],
   "skills": "./skills/",

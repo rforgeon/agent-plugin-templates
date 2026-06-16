@@ -7,7 +7,7 @@
     "url": "https://telvine.com"
   },
   "homepage": "https://telvine.com/learn/agent-plugin-templates",
-  "repository": "https://github.com/telvine/agent-plugin-templates/tree/main/plugins/internal-ops-plugin",
+  "repository": "https://github.com/rforgeon/agent-plugin-templates/tree/main/plugins/internal-ops-plugin",
   "license": "MIT",
   "keywords": ["internal-ops", "operations", "handoff", "agent-plugin", "telvine"],
   "skills": "./skills/",
