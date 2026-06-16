@@ -1,0 +1,32 @@
+[
+  {
+    "case_key": "missing-required-column",
+    "input_summary": "Workbook lacks the required customer_id column.",
+    "expected": {
+      "must_include": ["schema finding", "blocked or low confidence"]
+    }
+  },
+  {
+    "case_key": "variance-spike",
+    "input_summary": "Current month revenue is 35 percent above prior month for one segment.",
+    "expected": {
+      "must_include": ["delta percent", "segment", "possible driver"]
+    }
+  },
+  {
+    "case_key": "duplicate-invoice",
+    "input_summary": "Two rows share the same invoice id and amount.",
+    "expected": {
+      "must_include": ["duplicate", "row references"]
+    }
+  },
+  {
+    "case_key": "control-total-mismatch",
+    "input_summary": "Detail rows do not tie to the provided control total.",
+    "expected": {
+      "severity": "High",
+      "must_include": ["difference", "reconciliation"]
+    }
+  }
+]
+

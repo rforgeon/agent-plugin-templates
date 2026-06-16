@@ -1,0 +1,34 @@
+[
+  {
+    "case_key": "production-outage",
+    "input_summary": "Customer reports all users cannot log in and no owner has responded.",
+    "expected": {
+      "severity": "Blocker",
+      "status": "New",
+      "must_include": ["assign owner", "escalate"]
+    }
+  },
+  {
+    "case_key": "waiting-on-customer",
+    "input_summary": "Support asked for logs and customer has not replied.",
+    "expected": {
+      "status": "Waiting on customer",
+      "next_action": "follow up"
+    }
+  },
+  {
+    "case_key": "duplicate-threads",
+    "input_summary": "Two channels mention the same customer billing issue.",
+    "expected": {
+      "must_include": ["duplicate", "canonical thread"]
+    }
+  },
+  {
+    "case_key": "resolved-confirmed",
+    "input_summary": "Customer confirmed the workaround fixed the issue.",
+    "expected": {
+      "status": "Resolved"
+    }
+  }
+]
+

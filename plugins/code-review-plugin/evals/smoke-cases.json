@@ -1,0 +1,33 @@
+[
+  {
+    "case_key": "auth-regression",
+    "input_summary": "Diff removes owner check before updating a record.",
+    "expected": {
+      "priority": "P1",
+      "must_include": ["authorization", "impact", "fix"]
+    }
+  },
+  {
+    "case_key": "missing-test",
+    "input_summary": "Behavior changed but no corresponding test or eval was added.",
+    "expected": {
+      "priority": "P2",
+      "must_include": ["test gap"]
+    }
+  },
+  {
+    "case_key": "migration-risk",
+    "input_summary": "Database migration adds non-null column without backfill.",
+    "expected": {
+      "priority": "P1",
+      "must_include": ["migration", "backfill"]
+    }
+  },
+  {
+    "case_key": "no-findings",
+    "input_summary": "Small copy-only change with tests unaffected.",
+    "expected": {
+      "must_include": ["no findings", "residual risk"]
+    }
+  }
+]

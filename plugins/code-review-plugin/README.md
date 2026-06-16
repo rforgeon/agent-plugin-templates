@@ -15,3 +15,9 @@ telvine publish ./plugins/code-review-plugin
 - Output: file, line, severity, issue, impact, and suggested fix.
 - Telemetry: Skill events for review and component events for repository/CI lookups.
 
+## Template contents
+
+- `skills/review-code/SKILL.md` - runtime review workflow.
+- `references/operating-model.md` - priority taxonomy, review focus, output schema, and guardrails.
+- `connectors/README.md` - repository, CI, and issue tracker connector contract.
+- `evals/smoke-cases.json` - starter eval cases for auth, tests, migrations, and no-finding reviews.

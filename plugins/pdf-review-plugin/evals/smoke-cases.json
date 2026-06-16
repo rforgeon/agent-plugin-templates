@@ -1,0 +1,35 @@
+[
+  {
+    "case_key": "missing-signature",
+    "input_summary": "Approval packet has signature page but one required signature is absent.",
+    "expected": {
+      "type": "Missing information",
+      "severity": "High",
+      "must_include": ["page reference", "required signer"]
+    }
+  },
+  {
+    "case_key": "conflicting-dates",
+    "input_summary": "Contract summary lists a renewal date that conflicts with the terms section.",
+    "expected": {
+      "type": "Inconsistency",
+      "must_include": ["both page references"]
+    }
+  },
+  {
+    "case_key": "payment-obligation",
+    "input_summary": "PDF contains a payment deadline and late fee clause.",
+    "expected": {
+      "type": "Obligation",
+      "must_include": ["deadline", "owner"]
+    }
+  },
+  {
+    "case_key": "scanned-low-confidence",
+    "input_summary": "Scanned PDF has weak OCR confidence in a table.",
+    "expected": {
+      "must_include": ["low confidence", "render pages"]
+    }
+  }
+]
+

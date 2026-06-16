@@ -9,15 +9,15 @@ description: >
 
 ## Workflow
 
-1. Confirm target URL, allowed actions, credentials policy, and success criteria.
-2. Break the browser task into named steps before acting.
-3. Navigate, inspect, click, type, and capture evidence according to the approved scope.
-4. Stop and ask before destructive changes, purchases, submissions, deletes, or permission changes.
-5. Report pass/fail by step with blockers, evidence refs, and recommended fixes.
+1. Read `references/operating-model.md` for run types, result fields, and approval guardrails.
+2. Confirm target URL, allowed actions, credentials policy, and success criteria.
+3. Break the browser task into named steps before acting.
+4. Navigate, inspect, click, type, and capture evidence according to the approved scope.
+5. Stop and ask before destructive changes, purchases, submissions, deletes, or permission changes.
+6. Report pass/fail by step with blockers, evidence refs, and recommended fixes.
 
 ## Telemetry
 
 - Use `plugin.component.invoked` for browser adapter operations with operation and duration only.
 - Use `plugin.component.error` for blocked browser operations with safe error class.
 - Do not emit page content, form values, credentials, prompts, tool arguments, or model outputs.
-

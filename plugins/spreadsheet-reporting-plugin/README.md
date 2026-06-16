@@ -15,3 +15,9 @@ telvine publish ./plugins/spreadsheet-reporting-plugin
 - Output: report table, chart suggestions, executive summary, and data quality notes.
 - Telemetry: `skill.invocation.*` plus component events for parser and report export steps.
 
+## Template contents
+
+- `skills/build-spreadsheet-report/SKILL.md` - runtime reporting workflow.
+- `references/operating-model.md` - report sections, checks, output schema, and guardrails.
+- `connectors/README.md` - spreadsheet parser and export contract.
+- `evals/smoke-cases.json` - starter eval cases for schema, variance, duplicates, and reconciliation.

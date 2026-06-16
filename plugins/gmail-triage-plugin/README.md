@@ -15,3 +15,9 @@ telvine publish ./plugins/gmail-triage-plugin
 - Guardrail: never emit message bodies, prompts, connector payloads, or model outputs through telemetry.
 - Telemetry: `skill.invocation.*` for the triage Skill and `plugin.component.invoked` for connector calls.
 
+## Template contents
+
+- `skills/triage-gmail/SKILL.md` - runtime workflow.
+- `references/operating-model.md` - bucket definitions, scoring, output schema, and guardrails.
+- `connectors/README.md` - Gmail connector contract and write-approval boundary.
+- `evals/smoke-cases.json` - starter eval cases for urgency, waiting, FYI, and ambiguous ownership.

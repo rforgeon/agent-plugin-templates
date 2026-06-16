@@ -15,3 +15,9 @@ telvine publish ./plugins/internal-ops-plugin
 - Guardrail: distinguish observed facts from recommendations.
 - Telemetry: Skill events for review flow and component events for source system lookups.
 
+## Template contents
+
+- `skills/review-ops-exceptions/SKILL.md` - runtime exception review workflow.
+- `references/operating-model.md` - states, prioritization, output schema, and guardrails.
+- `connectors/README.md` - task, queue, incident, or warehouse connector contract.
+- `evals/smoke-cases.json` - starter eval cases for blocked, at-risk, waiting, and resolved items.

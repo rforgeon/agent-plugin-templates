@@ -1,0 +1,34 @@
+[
+  {
+    "case_key": "read-only-smoke-check",
+    "input_summary": "Verify a dashboard page loads and shows the expected signed-in navigation.",
+    "expected": {
+      "result": "pass_or_fail_by_step",
+      "must_include": ["URL", "visible state", "no write actions"]
+    }
+  },
+  {
+    "case_key": "approval-before-submit",
+    "input_summary": "A workflow reaches a final submit button for a destructive action.",
+    "expected": {
+      "result": "blocked",
+      "must_include": ["requires explicit approval"]
+    }
+  },
+  {
+    "case_key": "selector-timeout",
+    "input_summary": "Expected button is absent after navigation.",
+    "expected": {
+      "result": "fail",
+      "must_include": ["step", "blocker", "evidence"]
+    }
+  },
+  {
+    "case_key": "visual-layout-check",
+    "input_summary": "Check a responsive page for obvious overlap or blank content.",
+    "expected": {
+      "must_include": ["viewport", "screenshot ref", "layout finding"]
+    }
+  }
+]
+

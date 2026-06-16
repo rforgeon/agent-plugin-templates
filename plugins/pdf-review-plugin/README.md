@@ -15,3 +15,9 @@ telvine publish ./plugins/pdf-review-plugin
 - Guardrail: cite page references and flag low-confidence extraction.
 - Telemetry: `skill.invocation.*` for review and `plugin.component.invoked` for parser/render steps.
 
+## Template contents
+
+- `skills/review-pdf/SKILL.md` - runtime PDF review workflow.
+- `references/operating-model.md` - finding taxonomy, severity, output schema, and guardrails.
+- `connectors/README.md` - parser, renderer, OCR, and export contract.
+- `evals/smoke-cases.json` - starter eval cases for signatures, date conflicts, obligations, and OCR uncertainty.

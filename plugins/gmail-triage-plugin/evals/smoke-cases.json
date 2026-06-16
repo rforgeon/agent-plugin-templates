@@ -1,0 +1,37 @@
+[
+  {
+    "case_key": "urgent-customer-deadline",
+    "input_summary": "Customer escalation thread with deadline today and direct ask to the user.",
+    "expected": {
+      "bucket": "Urgent",
+      "next_action": "reply",
+      "must_include": ["deadline", "owner", "customer impact"]
+    }
+  },
+  {
+    "case_key": "waiting-on-vendor",
+    "input_summary": "User already replied yesterday and the next response is owed by a vendor.",
+    "expected": {
+      "bucket": "Waiting",
+      "next_action": "wait",
+      "must_include": ["external owner"]
+    }
+  },
+  {
+    "case_key": "newsletter-fyi",
+    "input_summary": "Automated newsletter with no direct ask.",
+    "expected": {
+      "bucket": "FYI",
+      "next_action": "archive"
+    }
+  },
+  {
+    "case_key": "ambiguous-owner",
+    "input_summary": "Thread contains a request but multiple possible owners.",
+    "expected": {
+      "bucket": "Needs reply soon",
+      "must_include": ["low confidence", "clarify owner"]
+    }
+  }
+]
+

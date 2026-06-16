@@ -1,0 +1,35 @@
+[
+  {
+    "case_key": "missing-industry-high-confidence",
+    "input_summary": "Account lacks industry and approved internal source has matching industry field.",
+    "expected": {
+      "confidence": "High",
+      "action": "Update",
+      "must_include": ["source category"]
+    }
+  },
+  {
+    "case_key": "conflicting-employee-range",
+    "input_summary": "CRM says 50-100 employees while current public source suggests 500-1000.",
+    "expected": {
+      "action": "Ask owner",
+      "must_include": ["conflicting", "confidence"]
+    }
+  },
+  {
+    "case_key": "low-confidence-contact-title",
+    "input_summary": "Contact title appears only in stale public data.",
+    "expected": {
+      "confidence": "Low",
+      "action": "Investigate"
+    }
+  },
+  {
+    "case_key": "write-requires-approval",
+    "input_summary": "User asks to update CRM after enrichment.",
+    "expected": {
+      "must_include": ["approval before write"]
+    }
+  }
+]
+

@@ -1,0 +1,34 @@
+[
+  {
+    "case_key": "blocked-by-approval",
+    "input_summary": "Operational item cannot progress until finance approval is granted.",
+    "expected": {
+      "state": "Blocked",
+      "must_include": ["approval owner", "next action"]
+    }
+  },
+  {
+    "case_key": "sla-at-risk",
+    "input_summary": "Task is still open and due within four hours with no recent owner update.",
+    "expected": {
+      "state": "At risk",
+      "must_include": ["SLA", "stale update"]
+    }
+  },
+  {
+    "case_key": "waiting-on-vendor",
+    "input_summary": "Vendor owns next response and internal owner already followed up.",
+    "expected": {
+      "state": "Waiting"
+    }
+  },
+  {
+    "case_key": "resolved-with-evidence",
+    "input_summary": "Queue item has closure note and downstream check passed.",
+    "expected": {
+      "state": "Resolved",
+      "must_include": ["closure evidence"]
+    }
+  }
+]
+

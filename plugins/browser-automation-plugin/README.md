@@ -15,3 +15,9 @@ telvine publish ./plugins/browser-automation-plugin
 - Guardrail: require explicit approval before destructive or irreversible web actions.
 - Telemetry: `plugin.component.invoked` for browser adapter operations and `skill.invocation.*` for workflows.
 
+## Template contents
+
+- `skills/run-browser-workflow/SKILL.md` - runtime browser workflow.
+- `references/operating-model.md` - run types, step result schema, and approval rules.
+- `connectors/README.md` - browser adapter contract.
+- `evals/smoke-cases.json` - starter eval cases for read-only checks, approval gates, timeouts, and visual checks.

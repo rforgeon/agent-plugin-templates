@@ -15,3 +15,9 @@ telvine publish ./plugins/slack-support-plugin
 - Output: channel, thread link, customer, severity, owner, status, and next action.
 - Telemetry: component-level events for Slack connector reads and Skill events for triage.
 
+## Template contents
+
+- `skills/triage-slack-support/SKILL.md` - runtime support triage workflow.
+- `references/operating-model.md` - severity taxonomy, statuses, output schema, and guardrails.
+- `connectors/README.md` - Slack connector contract and write-approval boundary.
+- `evals/smoke-cases.json` - starter eval cases for outage, waiting, duplicates, and resolved issues.

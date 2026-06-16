@@ -15,3 +15,9 @@ telvine publish ./plugins/crm-enrichment-plugin
 - Guardrail: ask before writing to CRM and keep uncertain research out of canonical fields.
 - Telemetry: component events for CRM connector calls and Skill events for enrichment.
 
+## Template contents
+
+- `skills/enrich-crm-records/SKILL.md` - runtime enrichment workflow.
+- `references/operating-model.md` - entity fields, confidence model, output schema, and guardrails.
+- `connectors/README.md` - CRM and enrichment connector contract.
+- `evals/smoke-cases.json` - starter eval cases for confidence, conflicts, stale data, and write approval.
