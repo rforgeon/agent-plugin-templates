@@ -3,10 +3,12 @@
 Fork this into your own plugin when users ask for inbox priority, reply queues, and follow-up extraction.
 
 ```bash
-npm i -g @telvine/cli
+npm i -g telvine@0.1.0
 telvine login
 telvine publish ./plugins/gmail-triage-plugin
 ```
+
+Package: [`telvine@0.1.0` on npm](https://www.npmjs.com/package/telvine).
 
 ## Opinionated defaults
 

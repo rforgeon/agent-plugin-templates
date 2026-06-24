@@ -3,10 +3,12 @@
 Fork this repo into your own plugin. Each starter is intentionally narrow, opinionated, and ready to publish with Telvine. These are not empty example manifests: every template includes a Skill, domain operating model, connector contract, smoke evals, and metadata-only telemetry guidance.
 
 ```bash
-npm i -g @telvine/cli
+npm i -g telvine@0.1.0
 telvine login
 telvine publish ./plugins/gmail-triage-plugin
 ```
+
+Package: [`telvine@0.1.0` on npm](https://www.npmjs.com/package/telvine).
 
 ## Templates
 
@@ -34,7 +36,7 @@ telvine publish ./plugins/gmail-triage-plugin
 9. Publish with Telvine:
 
 ```bash
-npm i -g @telvine/cli
+npm i -g telvine@0.1.0
 telvine login
 telvine publish ./my-plugin
 ```

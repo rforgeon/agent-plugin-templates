@@ -3,10 +3,12 @@
 Fork this into your own plugin when sales or success teams need consistent CRM record enrichment.
 
 ```bash
-npm i -g @telvine/cli
+npm i -g telvine@0.1.0
 telvine login
 telvine publish ./plugins/crm-enrichment-plugin
 ```
+
+Package: [`telvine@0.1.0` on npm](https://www.npmjs.com/package/telvine).
 
 ## Opinionated defaults
 

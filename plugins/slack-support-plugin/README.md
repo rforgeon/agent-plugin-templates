@@ -3,10 +3,12 @@
 Fork this into your own plugin when support work happens in Slack and needs a structured queue.
 
 ```bash
-npm i -g @telvine/cli
+npm i -g telvine@0.1.0
 telvine login
 telvine publish ./plugins/slack-support-plugin
 ```
+
+Package: [`telvine@0.1.0` on npm](https://www.npmjs.com/package/telvine).
 
 ## Opinionated defaults
 
